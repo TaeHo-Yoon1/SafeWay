@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.safeway">
+
+    <!-- 인터넷 권한 (Geocode/API 호출을 위해 반드시 필요) -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- 위치 권한 (현재 위치 받아오기 위해) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Naver Map SDK Client ID (반드시 본인 키로 변경) -->
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="3b1s9745hn"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

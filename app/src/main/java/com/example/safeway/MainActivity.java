@@ -177,8 +177,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     // ================================================
     private void geocodeAddress(String address) throws UnsupportedEncodingException {
         String encodedAddress = URLEncoder.encode(address, "UTF-8");
-        String url = "https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode" +
-                "?query=" + encodedAddress;
+        String url = "https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode?query=" + encodedAddress;
         Log.d("GEOCODE_URL", url);
 
         OkHttpClient client = new OkHttpClient();

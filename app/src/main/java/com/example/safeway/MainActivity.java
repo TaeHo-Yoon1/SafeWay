@@ -54,7 +54,7 @@ import okhttp3.Response;
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
     // ▶ 본인의 Naver Cloud Platform “지도/길찾기/장소 검색” API 키로 바꿔주세요!
     private static final String CLIENT_ID     = "3b1s9745hn";
-    private static final String CLIENT_SECRET = "LWR0NA25f3TS7GmO5wVjzN7MuODkHy4kS6inttvH";
+    private static final String CLIENT_SECRET = "Dm3S7OCZKbERL2jY2GeefwARl7munvrDprCtNawb";
 
     // UI 요소
     private Button btnModeWalking, btnModeTransit, btnModeDriving;
